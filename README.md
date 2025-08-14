@@ -2,52 +2,25 @@
 
 A simple and responsive MERN stack web app to track income & expenses, view charts, and manage budgets.
 
-🚀 Features
 
-JWT-based user authentication
 
-Add, view & delete income/expenses
+Functionalities Implemented:
 
-Dashboard with totals & recent transactions
-
-Charts for income/expenses (Recharts)
-
-Profile image upload
-
-Export data to Excel
-
-Responsive UI (React + TailwindCSS)
+1. User Authentication – Secure login and sign-up using JWT authentication.
+2. Dashboard Overview – Displays Total Balance, Income, and Expenses in summary cards.
+3. Income Management – Add, view, delete, and export income sources.
+4. Expense Management – Add, view, delete, and export expenses with category-based tracking.
+5. Interactive Charts – Visual representation of income & expenses using Bar, Pie, and Line charts.
+6. Recent Transactions – Displays the latest income and expense records for quick access.
+7. Expense & Income Reports – Download all income and expense data in Excel format.
+8. Mobile Responsive UI – Works seamlessly across desktops, tablets, and mobile devices.
+9. Intuitive Navigation – Sidebar menu with easy access to Dashboard, Income, Expenses, and Logout.
+10. Delete Functionality – Hover over income/expense cards to reveal a delete button for easy
+    
 
 🛠️ Tech Stack
 
 Frontend: React (Vite), TailwindCSS, Axios, Recharts
-
 Backend: Node.js, Express, MongoDB, Mongoose, Multer, JWT, bcrypt
-
 Other: XLSX, dotenv
 
-⚙️ Setup
-# Clone repo
-git clone <repo-url> && cd Expense-Tracker
-
-# Backend
-cd backend
-npm install
-# Create .env file
-MONGO_URI=<mongodb-uri>
-PORT=8000
-CLIENT_URL=http://localhost:5173
-JWT_SECRET=<secret>
-npm run dev
-
-# Frontend
-cd ../frontend
-npm install
-npm run dev
-
-📡 Main API Routes
-
-Auth: /auth/register, /auth/login, /auth/getUser
-Income: /income/add, /income/get, /income/:id
-Expense: /expense/add, /expense/get, /expense/:id
-Dashboard: /dashboard
